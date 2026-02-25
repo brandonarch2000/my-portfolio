@@ -1,4 +1,26 @@
-import Image from "next/image";
+import Summary from '@/components/Summary';
+import Skills from '@/components/Skills';
+import Education from '@/components/Education';
+import Experience from '@/components/Experience';
+
+export default function Home() {
+  return (
+    <main className="max-w-4xl mx-auto p-8">
+      <h1 className="text-4xl font-bold mb-4">Brandon Archibald</h1>
+      <p className="mb-4">763-234-4860 | brandonarch2000@gmail.com</p>
+      <p className="mb-4">
+        <a href="https://www.linkedin.com/in/brandon-archibald-2aa28929a" className="text-blue-600">LinkedIn</a> | 
+        <a href="https://github.com/brandonarch2000" className="text-blue-600">GitHub</a>
+      </p>
+      <Summary />
+      <Skills />
+      <Education />
+      <Experience />
+    </main>
+  );
+}
+
+/* import Image from "next/image";
 
 export default function Home() {
   return (
@@ -62,4 +84,4 @@ export default function Home() {
       </main>
     </div>
   );
-}
+} */
